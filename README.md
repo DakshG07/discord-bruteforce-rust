@@ -6,10 +6,10 @@ Proof of concept. Please don't actually brute-force a token
 ## Efficiency
 With a supercomputer able to calculate 60 quintillion hashes a second, it would take you about ~~2.93e+59 centuries~~ to get the has in the worst case scenario. Since these tokens need to be checked against the Discord API, you would have to multithread these calculations, perhaps across multiple machines, since validation can take 0.1-0.2 seconds, depending on the internet speed/latency.
 
-TLDR - It's wildly inefficient.
+TLDR - It's wildly inefficient, but still more effective(in theory) than guessing emails and passwords(with infinite combinations).
 
 
-*The centuries calculations were off, I used 27^62 instead of 27^64. Will update soon!*
+*Check out [this](https://www.desmos.com/calculator/n0hk8jqnup) desmos to play around with some results. The graph is rather uninteresting, but it should give you a sense of the scale of this.*
 
 ## How it works
 Refer to this diagram:
