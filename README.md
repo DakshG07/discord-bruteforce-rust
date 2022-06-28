@@ -18,3 +18,4 @@ Refer to this diagram:
 The user ID of the person you wish to attack is converted to Base64, then we append the current unix time in Base64. We then generate a random hash of 27 characters which is appended to the token. We then attempt to send a message through a POST request, and if the result returns `200`, we have successfully brute forced the token!
 ### Credit
 Credit to [wantyapps](https://github.com/wantyapps/) for the C version.
+Credit to [Dukk](https://github.com/DakshG07) for the idea and Rust version.
